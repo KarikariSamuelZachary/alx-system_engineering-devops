@@ -1,6 +1,6 @@
-#!/usr/bin/env bash
-
-Host 98.98.98.98
-  IdentityFile ~/.ssh/school
-  PreferredAuthentications publickey
-  PasswordAuthentication no
+Host *
+	AddKeysToAgent yes
+	IdentityFile ~/.ssh/id_ed25519
+Host 34.229.66.199
+	IdentityFile ~/.ssh/school
+	PasswordAuthentication no
