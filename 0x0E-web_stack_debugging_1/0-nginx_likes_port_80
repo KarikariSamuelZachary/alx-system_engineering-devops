@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Error was the service was not starting and the cause was a sumbolic link
+#should exists so a symbolic was created to fix this error
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
